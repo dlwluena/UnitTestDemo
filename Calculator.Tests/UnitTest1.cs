@@ -12,7 +12,7 @@ namespace CalculatorApp.Tests
         {
             // Arrange
             var mockLog = new Mock<ILogService>();
-            var calculator = new Calculator(mockLog.Object); // ✅ Artık namespace çakışması yok
+            var calculator = new Calculator(mockLog.Object); 
 
             // Act
             int result = calculator.Add(2, 3);
@@ -38,3 +38,4 @@ namespace CalculatorApp.Tests
         }
     }
 }
+
